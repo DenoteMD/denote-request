@@ -1,0 +1,56 @@
+{
+  "name": "denote-request",
+  "version": "1.0.2",
+  "description": "Denote request",
+  "main": "./built/index.js",
+  "types": "./built/index.d.ts",
+  "homepage": "https://github.com/DenoteMD/denote-request",
+  "bugs": {
+    "url": "https://github.com/DenoteMD/denote-request/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:DenoteMD/denote-request.git"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.2.4",
+    "@types/express": "^4.17.6",
+    "@types/express-serve-static-core": "^4.17.7",
+    "@types/lodash": "^4.14.165",
+    "@types/mocha": "^5.2.7",
+    "@types/mongoose": "^5.7.21",
+    "@types/node": "^12.12.42",
+    "@typescript-eslint/eslint-plugin": "^2.34.0",
+    "@typescript-eslint/parser": "^2.34.0",
+    "chai": "^4.2.0",
+    "eslint": "^6.6.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.18.2",
+    "husky": "^3.0.9",
+    "minimist": "^1.2.2",
+    "mocha": "^6.2.2",
+    "nodemon": "^2.0.6",
+    "ts-node": "^9.0.0",
+    "typedoc": "^0.19.2",
+    "typescript": "^3.9.3"
+  },
+  "dependencies": {
+    "axios": "^0.21.0",
+    "denote-ui": "^1.0.18",
+    "hash.js": "^1.1.7",
+    "lodash": "^4.17.20",
+    "safe-buffer": "^5.2.1"
+  },
+  "scripts": {
+    "test": "echo \"Test\"",
+    "build": "rm -rf ./built && tsc",
+    "release": "npm run build && node ./increase-built.js && npm publish"
+  },
+  "keywords": [
+    "request",
+    "network",
+    "privacy"
+  ],
+  "author": "Chiro Hiro <chiro8x@gmail.com>",
+  "license": "MIT"
+}

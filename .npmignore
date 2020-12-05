@@ -1,0 +1,9 @@
+.git
+src
+node_modules
+.eslintrc.json
+.prettierrc.json
+increase-built.js
+tsconfig.json
+tsconfig.json
+.prettierrc 
